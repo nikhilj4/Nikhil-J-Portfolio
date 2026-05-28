@@ -87,7 +87,6 @@ export default function Skills() {
               >
                 {/* Category header */}
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-xl">{group.icon}</span>
                   <h3
                     className="font-bold text-base font-['Space_Grotesk']"
                     style={{ color: group.color }}
