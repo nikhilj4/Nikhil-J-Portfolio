@@ -36,8 +36,10 @@ function Typewriter() {
         setCharIdx((c) => c - 1);
       }, 35);
     } else if (deleting && charIdx === 0) {
-      setDeleting(false);
-      setRoleIdx((r) => (r + 1) % roles.length);
+      timeout = setTimeout(() => {
+        setDeleting(false);
+        setRoleIdx((r) => (r + 1) % roles.length);
+      }, 0);
     }
 
     return () => clearTimeout(timeout);
@@ -65,10 +67,7 @@ function HeroCounter({ target, suffix = "" }: { target: number; suffix?: string 
   const inView = useInView(ref, { once: false, margin: "-40px" });
 
   useEffect(() => {
-    if (!inView) {
-      setCount(0); // reset so it counts up again next time
-      return;
-    }
+    if (!inView) return;
     const duration = 1600;
     const startTime = performance.now();
     let rafId: number;
@@ -80,7 +79,11 @@ function HeroCounter({ target, suffix = "" }: { target: number; suffix?: string 
       if (progress < 1) rafId = requestAnimationFrame(tick);
     };
     rafId = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(rafId);
+    // Reset to 0 on cleanup — fires when inView becomes false
+    return () => {
+      cancelAnimationFrame(rafId);
+      setCount(0);
+    };
   }, [inView, target]);
 
   return (

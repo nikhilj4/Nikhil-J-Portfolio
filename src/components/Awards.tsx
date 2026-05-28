@@ -1,7 +1,7 @@
 "use client";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Trophy, Users, MapPin, Calendar } from "lucide-react";
+import { Trophy, MapPin, Calendar } from "lucide-react";
 
 const awards = [
   {

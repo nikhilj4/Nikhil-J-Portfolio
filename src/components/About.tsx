@@ -8,10 +8,7 @@ function Counter({ target, suffix = "" }: { target: number; suffix?: string }) {
   const inView = useInView(ref, { once: false, margin: "-40px" });
 
   useEffect(() => {
-    if (!inView) {
-      setCount(0);
-      return;
-    }
+    if (!inView) return;
     const duration = 1600;
     const startTime = performance.now();
     let rafId: number;
@@ -22,7 +19,11 @@ function Counter({ target, suffix = "" }: { target: number; suffix?: string }) {
       if (progress < 1) rafId = requestAnimationFrame(tick);
     };
     rafId = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(rafId);
+    // Reset to 0 on cleanup — fires when inView becomes false
+    return () => {
+      cancelAnimationFrame(rafId);
+      setCount(0);
+    };
   }, [inView, target]);
 
   return (
