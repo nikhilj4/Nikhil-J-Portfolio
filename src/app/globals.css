@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #FAF7F2;
+  --color-cream-dark: #F2EBE0;
+  --color-card: #FFFFFF;
+  --color-gold: #C4943A;
+  --color-gold-light: #D4A853;
+  --color-gold-dark: #A07A2E;
+  --color-brown: #8B7355;
+  --color-ink: #1C1410;
+  --color-muted: #5C4A32;
+  --color-border: #E8DDD0;
+  --color-hover: #F5EDE0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FAF7F2;
+  background-image:
+    linear-gradient(rgba(196,148,58,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(196,148,58,0.08) 1px, transparent 1px);
+  background-size: 44px 44px;
+  background-attachment: fixed;
+  color: #1C1410;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+@keyframes float-a {
+  0%, 100% { transform: translateY(0px) translateX(0px) scale(1); }
+  33% { transform: translateY(-28px) translateX(12px) scale(1.04); }
+  66% { transform: translateY(14px) translateX(-18px) scale(0.97); }
+}
+
+@keyframes float-b {
+  0%, 100% { transform: translateY(0px) translateX(0px) scale(1); }
+  40% { transform: translateY(18px) translateX(-22px) scale(1.03); }
+  80% { transform: translateY(-12px) translateX(16px) scale(0.98); }
+}
+
+@keyframes float-c {
+  0%, 100% { transform: translateY(0px) translateX(0px) scale(1); }
+  25% { transform: translateY(-16px) translateX(20px) scale(1.02); }
+  75% { transform: translateY(20px) translateX(-10px) scale(0.96); }
+}
+
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.orb-a { animation: float-a 9s ease-in-out infinite; }
+.orb-b { animation: float-b 7s ease-in-out infinite; }
+.orb-c { animation: float-c 11s ease-in-out infinite; }
+
+.section-alt {
+  background-color: rgba(242, 235, 224, 0.55);
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #FAF7F2; }
+::-webkit-scrollbar-thumb { background: #C4943A; border-radius: 3px; }
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 35s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+.marquee-container:hover .animate-marquee {
+  animation-play-state: paused;
+}

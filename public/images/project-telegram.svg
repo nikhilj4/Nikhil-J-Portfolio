@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340">
+  <rect width="600" height="340" fill="#EEF5F0" rx="12"/>
+  <circle cx="300" cy="130" r="75" fill="#C4943A" opacity="0.15"/>
+  <circle cx="300" cy="130" r="55" fill="#C4943A" opacity="0.2"/>
+  <circle cx="300" cy="130" r="38" fill="#C4943A"/>
+  <text x="300" y="122" text-anchor="middle" font-family="Arial" font-size="26" fill="#FFF">✈</text>
+  <text x="300" y="143" text-anchor="middle" font-family="Arial" font-size="10" fill="#FFF" font-weight="bold">N8N BOT</text>
+  <rect x="60" y="220" width="130" height="50" fill="#FFFFFF" rx="8" stroke="#E8DDD0" stroke-width="1.5"/>
+  <text x="125" y="240" text-anchor="middle" font-family="Arial" font-size="10" fill="#C4943A" font-weight="bold">Job Scraper</text>
+  <text x="125" y="258" text-anchor="middle" font-family="Arial" font-size="9" fill="#8B7355">N8N Workflow</text>
+  <rect x="235" y="220" width="130" height="50" fill="#FFFFFF" rx="8" stroke="#E8DDD0" stroke-width="1.5"/>
+  <text x="300" y="240" text-anchor="middle" font-family="Arial" font-size="10" fill="#C4943A" font-weight="bold">Deduplicator</text>
+  <text x="300" y="258" text-anchor="middle" font-family="Arial" font-size="9" fill="#8B7355">Filter + Sort</text>
+  <rect x="410" y="220" width="130" height="50" fill="#FFFFFF" rx="8" stroke="#E8DDD0" stroke-width="1.5"/>
+  <text x="475" y="240" text-anchor="middle" font-family="Arial" font-size="10" fill="#C4943A" font-weight="bold">Telegram Push</text>
+  <text x="475" y="258" text-anchor="middle" font-family="Arial" font-size="9" fill="#8B7355">Live Community</text>
+  <line x1="190" y1="245" x2="235" y2="245" stroke="#C4943A" stroke-width="1.5"/>
+  <line x1="365" y1="245" x2="410" y2="245" stroke="#C4943A" stroke-width="1.5"/>
+  <line x1="125" y1="220" x2="265" y2="183" stroke="#C4943A" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5"/>
+  <line x1="300" y1="220" x2="300" y2="183" stroke="#C4943A" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5"/>
+  <line x1="475" y1="220" x2="335" y2="183" stroke="#C4943A" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5"/>
+  <text x="300" y="308" text-anchor="middle" font-family="Arial" font-size="16" fill="#8B7355" font-weight="bold">Telegram Job Bot</text>
+  <text x="300" y="328" text-anchor="middle" font-family="Arial" font-size="11" fill="#8B7355">N8N · Automation · Real-time Job Alerts</text>
+</svg>

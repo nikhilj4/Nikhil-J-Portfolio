@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340">
+  <rect width="600" height="340" fill="#F0F5F0" rx="12"/>
+  <rect x="50" y="40" width="200" height="160" fill="#FFFFFF" rx="8" stroke="#E8DDD0" stroke-width="2"/>
+  <rect x="50" y="40" width="200" height="100" fill="#F2EBE0" rx="8"/>
+  <circle cx="120" cy="85" r="28" fill="#C4943A" opacity="0.3"/>
+  <circle cx="120" cy="85" r="18" fill="#C4943A" opacity="0.6"/>
+  <rect x="75" y="155" width="150" height="8" fill="#E8DDD0" rx="4"/>
+  <rect x="90" y="170" width="120" height="8" fill="#E8DDD0" rx="4"/>
+  <rect x="75" y="185" width="140" height="8" fill="#C4943A" opacity="0.3" rx="4"/>
+  <text x="150" y="215" text-anchor="middle" font-family="Arial" font-size="10" fill="#8B7355">Input Image</text>
+  <path d="M255 120 L340 120" stroke="#C4943A" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <rect x="340" y="75" width="130" height="90" fill="#FFFFFF" rx="8" stroke="#E8DDD0" stroke-width="1.5"/>
+  <text x="405" y="100" text-anchor="middle" font-family="Arial" font-size="10" fill="#C4943A" font-weight="bold">Text Extraction</text>
+  <text x="405" y="116" text-anchor="middle" font-family="Arial" font-size="10" fill="#8B7355">EasyOCR</text>
+  <text x="405" y="138" text-anchor="middle" font-family="Arial" font-size="10" fill="#C4943A" font-weight="bold">Image Caption</text>
+  <text x="405" y="153" text-anchor="middle" font-family="Arial" font-size="10" fill="#8B7355">Vision LLM</text>
+  <rect x="200" y="250" width="200" height="50" fill="#C4943A" rx="8"/>
+  <text x="300" y="272" text-anchor="middle" font-family="Arial" font-size="11" fill="#FFF" font-weight="bold">🔊 Audio Output</text>
+  <text x="300" y="289" text-anchor="middle" font-family="Arial" font-size="9" fill="#FFE0B0">Text-to-Speech Conversion</text>
+  <line x1="405" y1="165" x2="370" y2="250" stroke="#C4943A" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+  <text x="300" y="318" text-anchor="middle" font-family="Arial" font-size="14" fill="#8B7355" font-weight="bold">VisualAid — Image Analysis for Visually Impaired</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340">
+  <rect width="600" height="340" fill="#F5EDE0" rx="12"/>
+  <rect x="40" y="40" width="120" height="50" fill="#C4943A" rx="8"/>
+  <text x="100" y="70" text-anchor="middle" font-family="Arial" font-size="12" fill="#FFF" font-weight="bold">Agent 1</text>
+  <rect x="240" y="40" width="120" height="50" fill="#8B7355" rx="8"/>
+  <text x="300" y="70" text-anchor="middle" font-family="Arial" font-size="12" fill="#FFF" font-weight="bold">Agent 2</text>
+  <rect x="440" y="40" width="120" height="50" fill="#C4943A" rx="8"/>
+  <text x="500" y="70" text-anchor="middle" font-family="Arial" font-size="12" fill="#FFF" font-weight="bold">Agent 3</text>
+  <line x1="160" y1="65" x2="240" y2="65" stroke="#C4943A" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="360" y1="65" x2="440" y2="65" stroke="#C4943A" stroke-width="2"/>
+  <rect x="180" y="140" width="240" height="70" fill="#FFFFFF" rx="8" stroke="#E8DDD0" stroke-width="2"/>
+  <text x="300" y="168" text-anchor="middle" font-family="monospace" font-size="12" fill="#1C1410">RAG Knowledge Base</text>
+  <text x="300" y="188" text-anchor="middle" font-family="Arial" font-size="10" fill="#8B7355">Conversational Memory · Query Routing</text>
+  <line x1="100" y1="90" x2="220" y2="140" stroke="#C4943A" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+  <line x1="300" y1="90" x2="300" y2="140" stroke="#C4943A" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+  <line x1="500" y1="90" x2="380" y2="140" stroke="#C4943A" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+  <text x="300" y="310" text-anchor="middle" font-family="Arial" font-size="16" fill="#8B7355" font-weight="bold">ERP LumyBot</text>
+  <text x="300" y="330" text-anchor="middle" font-family="Arial" font-size="11" fill="#8B7355">Multi-Agent · LangChain · Conversational Memory</text>
+</svg>
