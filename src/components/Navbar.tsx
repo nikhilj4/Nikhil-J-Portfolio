@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Download, CalendarDays } from "lucide-react";
+import Image from "next/image";
 
 const links = [
   { label: "About", href: "#about" },
@@ -55,8 +56,14 @@ export default function Navbar() {
               onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
               className="flex items-center gap-2 group"
             >
-              <div className="w-8 h-8 rounded-full bg-[#C4943A] flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
-                <span className="text-white font-bold text-xs font-['Space_Grotesk']">NJ</span>
+              <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-[#C4943A]/60 shadow-sm group-hover:scale-105 transition-transform">
+                <Image
+                  src="/images/nikhil j.png"
+                  alt="Nikhil J"
+                  width={32}
+                  height={32}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <span className="font-semibold text-[#1C1410] text-sm hidden sm:block font-['Space_Grotesk']">
                 Nikhil J
